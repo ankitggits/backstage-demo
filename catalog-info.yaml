@@ -18,7 +18,7 @@ metadata:
 spec:
   type: service
   system: examples
-  owner: guests
+  owner: team-a
   lifecycle: production
   providesApis:
     - demo-api
@@ -31,7 +31,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
-  owner: guest
+  owner: team-a
   definition:
     $text: http://localhost:8090/v3/api-docs
 
