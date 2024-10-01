@@ -17,7 +17,7 @@ metadata:
     travis-ci.com/repo-slug: ankitggits/backstage-demo
 spec:
   type: service
-  owner: group:guests
+  owner: guests
   lifecycle: production
   providesApis:
     - demo-api
