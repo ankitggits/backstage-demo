@@ -17,9 +17,7 @@ nav:
 docs_dir: docs
 plugins:
   - techdocs-core
-  - search
-  - print-site:
-      add_to_navigation: true
+
 
 markdown_extensions:
   - mkdocs_graphviz
