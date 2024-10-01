@@ -32,4 +32,5 @@ spec:
   lifecycle: production
   owner: guest
   definition:
-    $text: https://petstore.swagger.io/v2/swagger.json
+    $text: http://localhost:8090/v3/api-docs
+
