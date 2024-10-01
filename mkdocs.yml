@@ -1,0 +1,30 @@
+site_name: Root docs
+repo_url: https://github.com/ankitggits/backstage-demo
+edit_uri: edit/main/docs
+
+nav:
+  - Home: index.md
+  - Local development: local-development.md
+  - Feature Testing: feature-testing.md
+  - Mermaiding: mermaiding-er-diag.md
+  - Different Mermain: mermaid-diagram-test1.md
+  - TestDoc: test-doc.md
+  - Embedded Lucid Chart: testing-lucid.md
+  - Subdirectory docs: "!include ./sub-dir-documentation/mkdocs.yml"
+  - Runbook: runbook.md
+  - Images: images.md
+
+docs_dir: docs
+plugins:
+  - techdocs-core
+  - search
+  - print-site:
+      add_to_navigation: true
+
+markdown_extensions:
+  - mkdocs_graphviz
+  - markdown_inline_mermaid
+  - attr_list
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js
