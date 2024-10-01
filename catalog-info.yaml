@@ -31,7 +31,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
-  owner: ankit
+  owner: guest
   definition:
     $text: http://localhost:8090/v3/api-docs
 
