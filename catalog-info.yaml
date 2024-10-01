@@ -1,0 +1,38 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sample-service
+  title: Sample Service
+  description: |
+    A service for testing Backstage functionality. Configured for GitHub Actions and
+    Sentry.
+  labels:
+    tier: "3"
+  tags:
+    - test
+    - js
+    - demo
+  annotations:
+    github.com/project-slug: ankitggits/backstage-demo
+    backstage.io/techdocs-ref: dir:.
+    travis-ci.com/repo-slug: ankitggits/backstage-demo
+spec:
+  type: service
+  owner: group:guests
+  lifecycle: production
+  system: sample-system
+  providesApis:
+    - demo-api
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: demo-api
+  description: spring boot based demo app
+spec:
+  type: openapi
+  lifecycle: production
+  owner: guest
+  system: demo
+  definition:
+    $text: https://petstore.swagger.io/v2/swagger.json
