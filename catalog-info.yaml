@@ -2,8 +2,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: sample-service
-  title: Sample Service
+  name: demo-service
+  title: Demo Service
   description: |
     A service for testing Backstage functionality.
   labels:
@@ -30,7 +30,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
-  owner: guest
+  owner: ankit
   definition:
     $text: http://localhost:8090/v3/api-docs
 
