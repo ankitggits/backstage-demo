@@ -1,16 +1,15 @@
+# nonk8s
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: sample-service
   title: Sample Service
   description: |
-    A service for testing Backstage functionality. Configured for GitHub Actions and
-    Sentry.
+    A service for testing Backstage functionality.
   labels:
     tier: "3"
   tags:
     - test
-    - js
     - demo
   annotations:
     github.com/project-slug: ankitggits/backstage-demo
@@ -20,7 +19,6 @@ spec:
   type: service
   owner: group:guests
   lifecycle: production
-  system: sample-system
   providesApis:
     - demo-api
 ---
@@ -33,6 +31,5 @@ spec:
   type: openapi
   lifecycle: production
   owner: guest
-  system: demo
   definition:
     $text: https://petstore.swagger.io/v2/swagger.json
