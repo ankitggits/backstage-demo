@@ -25,4 +25,4 @@ markdown_extensions:
   - attr_list
 
 extra_javascript:
-  - https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js
+  - https://github.com/rod2ik/cdn/tree/main/mkdocs/javascripts/mkdocs-graphviz.js
